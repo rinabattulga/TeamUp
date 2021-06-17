@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Team Up</title>
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0">
+
+    <!-- CSS File -->
+    <link href="static/style.css" rel="stylesheet">
+</head>
+
+<body class="backgroundCode">
+
+    <!-- Page Heading -->
+    <div class="navbar">
+        <a href="{{ urle }}">For Educators</a>
+        <a href="{{ urls }}">For Students</a>
+        <a href="{{ urla }}">About</a>
+        <a href="{{ urli }}" class="home">Home</a>
+    </div>
+    
+    <div class="container">
+        <h4>Answer the following questions honestly and to the best of your abilities. If you have trouble choosing an answer choice, pick the one that best describes you. We will be using these results to form your final groups!</h4>
+    </div>
+    
+    <form method="POST">
+        
+        <h3>Team-Matching Survey</h3>
+        
+        <div class="question"> 
+             Please enter your first and last name 
+        </div>
+
+        <div class="choices">
+            <input name="name" placeholder="e.g. John Doe" autocomplete="off">
+        </div>
+
+        <div class="question"> 
+             Please create a username
+        </div>
+        
+        <div class="choices">
+            <input name="username" placeholder="e.g. johndoe1" autocomplete="off">
+        </div>
+
+        <div class="question"> 
+             Please create a password (you can login with your email and password later to view your final team)
+        </div>
+        
+        <div class="choices">
+            <input name="password" type="password" placeholder="Must be at least 5 characters" autocomplete="off">
+        </div>
+        
+        <div class="question"> 
+             Please confirm your password:
+        </div>
+        
+        <div class="choices">
+            <input name="password2" type="password" autocomplete="off">
+        </div>
+        
+        <h3>Personality Test</h3>
+
+        <div class="question"> 
+             1) When you are with a group of people, would you usually rather  
+        </div> 
+
+        <div class="choices">
+            <input type="radio" name="q1" value="E">
+            <label>Join in the talk of the group</label><br>
+            
+            <input type="radio" name="q1" value="I">
+            <label>Talk individually with people you know well</label><br>
+        </div>
+
+        <div class="question"> 
+             2) Do you usually get along better with  
+        </div> 
+
+        <div class="choices">
+            <input type="radio" name="q2" value="S">
+            <label>Realistic people</label><br>
+            
+            <input type="radio" name="q2" value="N">
+            <label>Imaginative people</label><br>
+        </div>
+
+        <div class="question"> 
+             3) Which word in the pair appeals to you more  
+        </div> 
+
+        <div class="choices">
+            <input type="radio" name="q3" value="T">
+            <label>a) Analyze</label><br>
+            
+            <input type="radio" name="q3" value="F">
+            <label>b) Sympathize</label><br>
+        </div>
+
+        <div class="question"> 
+             4) Does following a schedule  
+        </div> 
+
+        <div class="choices">
+            <input type="radio" name="q4" value="J">
+            <label>Appeal to you</label><br>
+            
+            <input type="radio" name="q4" value="P">
+            <label>Cramp you</label><br>
+        </div>
+
+        <div class="question"> 
+             5) When you have to meet strangers, do you find it  
+        </div> 
+
+        <div class="choices">
+            <input type="radio" name="q5" value="E">
+            <label>Pleasant, or at least easy</label><br>
+            
+            <input type="radio" name="q5" value="I">
+            <label>Something that takes a good deal of effort</label><br>
+        </div>
+
+        <div class="question"> 
+             6) If you were a teacher, would you rather teach  
+        </div> 
+
+        <div class="choices">
+            <input type="radio" name="q6" value="S">
+            <label>Fact courses</label><br>
+            
+            <input type="radio" name="q6" value="N">
+            <label>Courses involving theory</label><br>
+        </div>
+
+        <div class="question"> 
+             7) Which word in the pair appeals to you more  
+        </div> 
+
+        <div class="choices">
+            <input type="radio" name="q7" value="T">
+            <label>Foresight</label><br>
+            
+            <input type="radio" name="q7" value="F">
+            <label>Compassion</label><br>
+        </div>
+
+        <div class="question"> 
+             8) Do you prefer to  
+        </div> 
+
+        <div class="choices">
+            <input type="radio" name="q8" value="J">
+            <label>Arrange dates, parties, etc., well in advance</label><br>
+            
+            <input type="radio" name="q8" value="P">
+            <label>Be free to do whatever looks like fun when the time comes</label><br>
+        </div>
+
+        <div class="question">
+             9) Are you  
+        </div>
+
+        <div class="choices">
+            <input type="radio" name="q9" value="E">
+            <label>Easy to get to know</label><br>
+            
+            <input type="radio" name="q9" value="I">
+            <label>Hard to get to know</label><br>
+        </div>
+
+        <div class="question"> 
+             10) Is it higher praise to say someone has  
+        </div> 
+
+        <div class="choices">
+            <input type="radio" name="q10" value="S">
+            <label>Common sense</label><br>
+            
+            <input type="radio" name="q10" value="N">
+            <label>Vision</label><br>
+        </div>
+
+        <div class="question"> 
+             11) Which word in the pair appeals to you more  
+        </div> 
+
+        <div class="choices">
+            <input type="radio" name="q11" value="T">
+            <label>Firm</label><br>
+            
+            <input type="radio" name="q11" value="F">
+            <label>Gentle</label><br>
+        </div>
+
+        <div class="question"> 
+             12) Does the idea of making a list of what you should get done over a weekend  
+        </div> 
+
+        <div class="choices">
+            <input type="radio" name="q12" value="J">
+            <label>Appeal to you</label><br>
+            
+            <input type="radio" name="q12" value="P">
+            <label>Leave you cold</label><br>
+        </div>
+
+        <div class="question"> 
+             13) Do you tend to have  
+        </div> 
+
+        <div class="choices">
+            <input type="radio" name="q13" value="E">
+            <label>Broad friendships with many different people</label><br>
+            
+            <input type="radio" name="q13" value="I">
+            <label>Deep friendships with a very few people</label><br>
+        </div>
+
+        <div class="question"> 
+             14) Would you rather have as a friend someone who  
+        </div> 
+
+        <div class="choices">
+            <input type="radio" name="q14" value="S">
+            <label>Has both feet on the ground</label><br>
+            
+            <input type="radio" name="q14" value="N">
+            <label>Is always coming up with new ideas</label><br>
+        </div>
+
+        <div class="question"> 
+             15) Which word in the pair appeals to you more  
+        </div> 
+
+        <div class="choices">
+            <input type="radio" name="q15" value="T">
+            <label>Thinking</label><br>
+            
+            <input type="radio" name="q15" value="F">
+            <label>Feeling</label><br>
+        </div>
+
+        <div class="question"> 
+             16) When it is settled well in advance that you will do a certain thing at a certain time, do you find it  
+        </div> 
+
+        <div class="choices">
+            <input type="radio" name="q16" value="J">
+            <label>Nice to be able to plan accordingly</label><br>
+            
+            <input type="radio" name="q16" value="P">
+            <label>A little unpleasant to be tied down</label><br>
+        </div>
+
+        <div class="question"> 
+             17) At parties and social events, do you  
+        </div> 
+
+        <div class="choices">
+            <input type="radio" name="q17" value="E">
+            <label>Always have fun</label><br>
+            
+            <input type="radio" name="q17" value="I">
+            <label>Sometimes get bored</label><br>
+        </div>
+
+        <div class="question"> 
+             18) Would you rather be considered  
+        </div> 
+
+        <div class="choices">
+            <input type="radio" name="q18" value="S">
+            <label>A practical person</label><br>
+            
+            <input type="radio" name="q18" value="N">
+            <label>An ingenious person</label><br>
+        </div>
+
+        <div class="question"> 
+             19) Is it a higher compliment to be called  
+        </div> 
+
+        <div class="choices">
+            <input type="radio" name="q19" value="T">
+            <label>A consistently reasonable person</label><br>
+            
+            <input type="radio" name="q19" value="F">
+            <label>A person of real feeling</label><br>
+        </div>
+
+        <div class="question"> 
+             20) Is it harder for you to adapt to  
+        </div>
+
+        <div class="choices">
+            <input type="radio" name="q20" value="J">
+            <label>Constant change</label><br>
+            
+            <input type="radio" name="q20" value="P">
+            <label>Routine</label><br>
+        </div>
+        
+        <h3>Rate your experience level for each of the following skills</h3>
+        
+        <div class="question"> 
+             21) {{ skill1 }}
+        </div>
+
+        <div class="choices">
+            <input type="radio" name="q21" value="1">
+            <label>No experience</label><br>
+            <input type="radio" name="q21" value="2">
+            <label>Beginner</label><br>
+            <input type="radio" name="q21" value="3">
+            <label>Average</label><br>
+            <input type="radio" name="q21" value="4">
+            <label>Advanced</label><br>
+            <input type="radio" name="q21" value="5">
+            <label>Expert</label><br>
+        </div>
+        
+        <div class="question"> 
+             22) {{ skill2 }}
+        </div>
+
+        <div class="choices">
+            <input type="radio" name="q22" value="1">
+            <label>No experience</label><br>
+            <input type="radio" name="q22" value="2">
+            <label>Beginner</label><br>
+            <input type="radio" name="q22" value="3">
+            <label>Average</label><br>
+            <input type="radio" name="q22" value="4">
+            <label>Advanced</label><br>
+            <input type="radio" name="q22" value="5">
+            <label>Expert</label><br>
+        </div>
+        
+        <div class="question"> 
+             23) {{ skill3 }}
+        </div>
+
+        <div class="choices">
+            <input type="radio" name="q23" value="1">
+            <label>No experience</label><br>
+            <input type="radio" name="q23" value="2">
+            <label>Beginner</label><br>
+            <input type="radio" name="q23" value="3">
+            <label>Average</label><br>
+            <input type="radio" name="q23" value="4">
+            <label>Advanced</label><br>
+            <input type="radio" name="q23" value="5">
+            <label>Expert</label><br>
+        </div>
+        
+        <div class="question"> 
+             24) {{ skill4 }}
+        </div>
+
+        <div class="choices">
+            <input type="radio" name="q24" value="1">
+            <label>No experience</label><br>
+            <input type="radio" name="q24" value="2">
+            <label>Beginner</label><br>
+            <input type="radio" name="q24" value="3">
+            <label>Average</label><br>
+            <input type="radio" name="q24" value="4">
+            <label>Advanced</label><br>
+            <input type="radio" name="q24" value="5">
+            <label>Expert</label><br>
+        </div>
+        
+        <div class="question">
+            <input type="submit">
+        </div>
+    </form>
+
+</body>
+
+</html>

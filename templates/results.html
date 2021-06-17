@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Team Up</title>
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0">
+
+    <!-- CSS File -->
+    <link href="static/style.css" rel="stylesheet">
+</head>
+
+<body class="backgroundResult">
+        
+    <!-- Page Heading -->
+    <div class="navbar">
+        <a href="{{ urle }}">For Educators</a>
+        <a href="{{ urls }}">For Students</a>
+        <a href="{{ urla }}">About</a>
+        <a href="{{ urli }}" class="home">Home</a>
+    </div>
+    
+    <div class="summary">
+        {{ text }}
+    </div>
+    
+    <div class="results">
+        <h3> Here are the teams! </h3>
+        
+        <ol>
+            {% for stu in students %}
+                    <li>
+                        {{ stu }}
+                    </li>
+            <br>
+            {% endfor %}
+        </ol>
+        <ol>
+            {% for team in teams %}
+                    <li>
+                        {% for student in team %}
+                            {{ student }}
+                            <br>
+                        {% endfor %}
+                    </li>
+            <br>
+            {% endfor %}
+        </ol>
+    
+        <h3> Overall class composition </h3>
+    
+        <img src="{{image}}" class="piechart">
+    
+        <div class = "normalFont">
+            To understand what these personality types mean, check out our about page
+            <br><br>
+        </div>
+    </div>
+    
+</body>
+
+</html>

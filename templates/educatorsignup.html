@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Team Up</title>
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0">
+
+    <!-- CSS File -->
+    <link href="static/style.css" rel="stylesheet">
+</head>
+
+<body class="backgroundEducatorCreateAnAccount">
+
+    <!-- Page Heading -->
+    <div class="navbar">
+        <a href="{{ urle }}">For Educators</a>
+        <a href="{{ urls }}">For Students</a>
+        <a href="{{ urla }}">About</a>
+        <a href="{{ urli }}" class="home">Home</a>
+    </div>
+    
+    <div class="summary">
+        {{ text }}
+    </div>
+    
+    <div class="summary">
+    </div>
+    
+    <form method="POST">
+        
+        <h3>Welcome!</h3>
+        
+        <div class="question"> 
+             Please enter your full name
+        </div>
+
+        <div class="choices">
+            <input name="fullname" autocomplete="off" placeholder="e.g. John Doe">
+        </div>
+        
+        <div class="question"> 
+             Please enter your email (username)
+        </div>
+
+        <div class="choices">
+            <input name="username" autocomplete="off" placeholder="e.g. john.doe@nyu.edu">
+        </div>
+
+        <div class="question"> 
+             Please create a password
+        </div>
+        
+        <div class="choices">
+            <input name="password" type="password" autocomplete="off" placeholder="Must be at least 5 characters">
+        </div>
+        
+        <div class="question"> 
+             Please confirm your password
+        </div>
+        
+        <div class="choices">
+            <input name="password2" type="password" autocomplete="off">
+        </div>
+        
+        <div class="question">
+            <input type="submit">
+        </div>
+        
+    </form>
+
+</body>
+
+</html>
